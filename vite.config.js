@@ -8,7 +8,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://betrufit.vercel.app',
+        target: 'http://localhost:7777',
         changeOrigin: true
       }
     }

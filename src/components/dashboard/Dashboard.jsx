@@ -99,7 +99,7 @@ export function Dashboard() {
 
       {/* Plan Progress */}
       {overview?.plan && (
-        <Card className="bg-gradient-to-r from-primary/10 to-success/10 border-primary/20">
+        <Card className="bg-linear-to-r from-primary/10 to-success/10 border-primary/20">
           <CardContent className="p-6">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
               <div>
@@ -208,7 +208,7 @@ export function Dashboard() {
                 </LineChart>
               </ResponsiveContainer>
             ) : (
-              <div className="h-[200px] flex items-center justify-center text-muted-foreground">
+              <div className="h-50 flex items-center justify-center text-muted-foreground">
                 <div className="text-center">
                   <Scale className="h-10 w-10 mx-auto mb-2 opacity-50" />
                   <p>No weight data yet</p>
@@ -258,7 +258,7 @@ export function Dashboard() {
                 </BarChart>
               </ResponsiveContainer>
             ) : (
-              <div className="h-[200px] flex items-center justify-center text-muted-foreground">
+              <div className="h-50 flex items-center justify-center text-muted-foreground">
                 <div className="text-center">
                   <Footprints className="h-10 w-10 mx-auto mb-2 opacity-50" />
                   <p>No steps data yet</p>
